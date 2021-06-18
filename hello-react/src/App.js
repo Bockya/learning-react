@@ -1,14 +1,17 @@
 import React from 'react';
+import './App.css';
 
 function App() {
-  // 기본적으로 const 사용. 변경해야 할 때 let 쓰기.
   const name = '리액트';
-  return (
-    <>
-      <h1>{name} 안녕!</h1>
-      <h2>잘 작동하니?</h2>
-    </>
-  );
+  const style = {
+    // 카멜표기법
+    backgroundColor: 'black',
+    color: 'aqua',
+    fontSize: '48px',
+    fontWeight: 'bold',
+    padding: 16, // px
+  };
+  return <div style={style}>{name}</div>;
 }
 
 export default App;
